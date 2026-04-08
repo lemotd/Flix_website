@@ -5,292 +5,236 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flix 2.0 - 像聊天一样传文件</title>
   <link rel="stylesheet" href="style.css">
+  <script src="smooth-corners.js" defer></script>
 </head>
 <body>
   <!-- Header / Nav -->
   <header class="header">
     <div class="header-inner">
-      <div class="logo">Flix</div>
-      <nav class="nav" aria-label="主导航">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Flix" height="17">
+      </div>
+      <nav class="nav" id="main-nav" aria-label="主导航">
         <a href="#" class="nav-link active">概览</a>
-        <a href="#" class="nav-link">下载</a>
+        <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="nav-link">下载</a>
         <a href="#" class="nav-link">反馈</a>
         <a href="#" class="nav-link">日志</a>
         <a href="#" class="nav-link">帮助</a>
         <a href="#" class="nav-link">关于</a>
         <a href="#" class="nav-link">个人中心</a>
       </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="菜单" aria-expanded="false">
+        <span class="menu-icon"></span>
+      </button>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-bg-ellipse" aria-hidden="true"></div>
-    <h1 class="hero-title">像聊天一样传文件</h1>
-    <p class="hero-subtitle">新一代局域网传输工具，好设计，处处都好用</p>
-    <div class="hero-buttons">
-      <a href="#" class="btn btn-primary">立即下载</a>
-      <a href="#" class="btn btn-outline">网页版</a>
+    <h1 class="hero-title fade-up">像聊天一样传文件</h1>
+    <p class="hero-subtitle fade-up">新一代局域网全端传输工具，好设计，处处都好用</p>
+    <div class="hero-buttons fade-up">
+      <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="btn btn-primary">立即下载</a>
+      <a href="https://flix.center/web" target="_blank" rel="noopener noreferrer" class="btn btn-outline">网页版</a>
     </div>
-    <div class="hero-devices">
-      <div class="device device-phone">
-        <div class="device-screen phone-screen"></div>
-      </div>
-      <div class="device device-laptop">
-        <div class="device-screen laptop-screen"></div>
-      </div>
-      <div class="device device-tablet">
-        <div class="device-screen tablet-screen"></div>
-      </div>
+    <div class="hero-devices fade-up">
+      <img src="assets/hero-devices.png" alt="Flix 多设备界面展示">
     </div>
   </section>
 
-  <!-- Section 1: 全新设计 -->
+  <!-- Section 1: 好看的设计 -->
   <section class="section section-design">
+    <div class="section-design-header">
+      <h2>好看的设计才好用。</h2>
+    </div>
+    <div class="design-showcase-card fade-up">
+      <img src="assets/design-showcase.png" alt="全新设计展示" class="design-showcase-img">
+    </div>
+  </section>
+
+  <!-- Section 2: 聊天交互 -->
+  <section class="section section-chat">
     <div class="container">
-      <div class="section-header align-left">
-        <h2>全新设计，好看的设计才好用。</h2>
-        <p>全面重构 UI 控件，新增数十种全新动效与反馈，工具软件也要颜值高。</p>
+      <div class="section-header-row fade-up">
+        <div class="section-header align-left">
+          <h2>像聊天一样，<br>熟悉易上手的传输操作。</h2>
+          <p class="section-subtitle-medium">在聊天气泡中，一拖一拽，熟悉的体验都在。</p>
+        </div>
+        <div class="section-nav-arrows" aria-label="滚动控制">
+          <button class="nav-arrow nav-arrow-left" data-carousel="chat" data-dir="-1" aria-label="向左滚动">
+            <img src="assets/icon-arrow-left.svg" alt="">
+          </button>
+          <button class="nav-arrow nav-arrow-right" data-carousel="chat" data-dir="1" aria-label="向右滚动">
+            <img src="assets/icon-arrow-right.svg" alt="">
+          </button>
+        </div>
       </div>
-      <div class="design-showcase-card">
-        <div class="design-illustration">
-          <!-- Isometric illustration area -->
-          <div class="iso-scene">
-            <div class="iso-element iso-chat-bubble bubble-1">
-              <div class="bubble-file-icon"></div>
-              <div class="bubble-content">
-                <span class="bubble-filename">Flix_2.0.4.0_android.apk</span>
-                <div class="bubble-meta">
-                  <span class="bubble-size">90.4 MB</span>
-                  <span class="bubble-speed">59 MB/s</span>
-                </div>
-                <div class="bubble-progress"><div class="bubble-progress-fill" style="width:40%"></div></div>
-              </div>
-            </div>
-            <div class="iso-element iso-chat-bubble bubble-2">
-              <div class="bubble-content">
-                <span class="bubble-filename">张伟_毕业论文相关文件合集.zip</span>
-                <div class="bubble-meta">
-                  <span class="bubble-size">483.2 MB</span>
-                  <span class="bubble-speed">199 MB/s</span>
-                </div>
-                <div class="bubble-progress"><div class="bubble-progress-fill" style="width:38%"></div></div>
-              </div>
-            </div>
-            <div class="iso-element iso-chat-bubble bubble-3">
-              <div class="bubble-content">
-                <span class="bubble-filename">2026 年第一季度工作计划.pdf</span>
-                <div class="bubble-meta">
-                  <span class="bubble-size">159 MB</span>
-                  <span class="bubble-speed">68 MB/s</span>
-                </div>
-                <div class="bubble-progress"><div class="bubble-progress-fill" style="width:38%"></div></div>
-              </div>
-            </div>
-            <!-- Floating icons -->
-            <div class="float-icon icon-wifi" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#3482ff" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#3482ff"/></svg>
-            </div>
-            <div class="float-icon icon-toggle-on" aria-hidden="true">
-              <div class="toggle-track on"><div class="toggle-thumb"></div></div>
-            </div>
-            <div class="float-icon icon-toggle-off" aria-hidden="true">
-              <div class="toggle-track off"><div class="toggle-thumb"></div></div>
-            </div>
-            <div class="float-icon icon-file-row" aria-hidden="true">
-              <svg viewBox="0 0 40 30" fill="none"><rect x="2" y="2" width="36" height="26" rx="4" stroke="#bcbcbc" stroke-width="1.5"/><rect x="8" y="8" width="10" height="10" rx="2" fill="#5d80ff" opacity="0.2"/><rect x="22" y="9" width="12" height="2" rx="1" fill="#ccc"/><rect x="22" y="14" width="8" height="2" rx="1" fill="#ddd"/></svg>
-            </div>
-            <!-- Context menu -->
-            <div class="float-icon icon-context-menu" aria-hidden="true">
-              <div class="ctx-menu">
-                <div class="ctx-item">拷贝</div>
-                <div class="ctx-item">转发</div>
-                <div class="ctx-item">多选</div>
-                <div class="ctx-item">打开所在文件夹</div>
-                <div class="ctx-item">自由复制</div>
-                <div class="ctx-item">上传到云端</div>
-                <div class="ctx-item">文件详情</div>
-                <div class="ctx-item delete">删除</div>
-              </div>
-            </div>
-            <!-- Notification popup -->
-            <div class="float-icon icon-notification" aria-hidden="true">
-              <div class="notif-card">
-                <div class="notif-device">Xiaomi 15S Pro</div>
-                <div class="notif-msg">请求投屏到本机</div>
-                <div class="notif-actions">
-                  <span class="notif-btn reject">拒绝</span>
-                  <span class="notif-btn accept">同意</span>
-                </div>
-              </div>
-            </div>
+    </div>
+    <div class="cards-carousel fade-up" id="carousel-chat">
+      <div class="cards-track">
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-chat-phone.png" alt="熟悉的聊天交互" class="card-phone-img">
+          </div>
+          <div class="card-text">
+            <h4>熟悉的聊天交互。</h4>
+            <p>聊天框和功能入口，都以你最熟悉的方式呈现。</p>
+          </div>
+        </div>
+        <div class="card-item card-wide">
+          <div class="card-image card-bg-image" data-smooth-corners style="background-image: url('assets/card-chat-drag-bg.jpg')">
+            <img src="assets/card-chat-drag.png" alt="拖拽发送和快速保存" class="card-fill-img">
+          </div>
+          <div class="card-text">
+            <h4>拖拽发送和快速保存。</h4>
+            <p>文件和文件夹，拖到聊天窗口可快速发送。从聊天窗口把气泡拖出来，也可快速保存到指定位置。</p>
+          </div>
+        </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-chat-bubbles.png" alt="直观的可视化气泡" class="card-content-img">
+          </div>
+          <div class="card-text">
+            <h4>直观的可视化气泡。</h4>
+            <p>传输进度、文件信息都以最熟悉的方式呈现，操作按钮也清晰可点。</p>
+          </div>
+        </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-chat-menu.png" alt="全能的消息操作" class="card-content-img">
+          </div>
+          <div class="card-text">
+            <h4>全能的消息操作。</h4>
+            <p>转发、多选、自由复制...每条消息气泡都有全能的选择。</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 2: 全能的局域网工具 -->
+  <!-- Section 3: 全能的局域网工具 -->
   <section class="section section-tools">
     <div class="container">
-      <div class="section-header align-left">
-        <h2>全能的局域网工具，现在更全能。</h2>
-        <p>不只是传文件，音视频通话、投屏和远控等实用工具也已悉数登场。</p>
+      <div class="section-header-row fade-up">
+        <div class="section-header align-left">
+          <h2>全能的局域网工具，<br>现在更全能。</h2>
+          <p class="section-subtitle-medium">不只是传文件，<br>音视频通话、投屏和远控等实用工具也已悉数登场。</p>
+        </div>
+        <div class="section-nav-arrows" aria-label="滚动控制">
+          <button class="nav-arrow nav-arrow-left" data-carousel="tools" data-dir="-1" aria-label="向左滚动">
+            <img src="assets/icon-arrow-left.svg" alt="">
+          </button>
+          <button class="nav-arrow nav-arrow-right" data-carousel="tools" data-dir="1" aria-label="向右滚动">
+            <img src="assets/icon-arrow-right.svg" alt="">
+          </button>
+        </div>
       </div>
-      <div class="tools-grid">
-        <!-- 音视频通话 -->
-        <div class="tool-card">
-          <div class="tool-card-header">
-            <div class="tool-icons">
-              <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-            </div>
-            <h3>音视频通话</h3>
+    </div>
+    <div class="cards-carousel fade-up" id="carousel-tools">
+      <div class="cards-track">
+        <div class="card-item card-small">
+          <div class="card-image card-bg-dark" data-smooth-corners>
+            <img src="assets/card-tool-call.png" alt="音视频通话" class="card-tool-call-img">
+          </div>
+          <div class="card-text">
+            <h4>音视频通话。</h4>
             <p>局域网内通话，无需连接互联网。</p>
           </div>
-          <div class="tool-card-image">
-            <div class="tool-placeholder tool-call"></div>
-          </div>
         </div>
-        <!-- 投屏 & 远程控制 -->
-        <div class="tool-card">
-          <div class="tool-card-header">
-            <div class="tool-icons">
-              <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <h3>投屏 & 远程控制</h3>
+        <div class="card-item card-wide">
+          <div class="card-image card-bg-image" data-smooth-corners style="background-image: url('assets/card-tool-screen-bg.png')">
+            <img src="assets/card-tool-screen-window.png" alt="投屏和远程控制" class="card-tool-screen-img">
+          </div>
+          <div class="card-text">
+            <h4>投屏 & 远程控制。</h4>
             <p>局域网内高效协同，边聊边看边操作。</p>
           </div>
-          <div class="tool-card-image">
-            <div class="tool-placeholder tool-screen"></div>
+        </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-tool-notify.png" alt="通知流转" class="card-notify-img">
+          </div>
+          <div class="card-text">
+            <h4>通知流转。</h4>
+            <p>多设备通知互相流转共享，及时同步最新消息。</p>
           </div>
         </div>
-        <!-- 通知流转 -->
-        <div class="tool-card">
-          <div class="tool-card-header">
-            <div class="tool-icons">
-              <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-            </div>
-            <h3>通知流转</h3>
-            <p>多设备通知共享，及时同步最新消息。</p>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-tool-fileshare.png" alt="文件共享" class="card-phone-img">
           </div>
-          <div class="tool-card-image">
-            <div class="tool-placeholder tool-notify"></div>
-          </div>
-        </div>
-        <!-- 更多功能 -->
-        <div class="tool-card">
-          <div class="tool-card-header">
-            <span class="badge">即将上线</span>
-            <h3>更多功能，还在路上</h3>
-          </div>
-          <div class="tool-card-image">
-            <div class="tool-placeholder tool-more">
-              <div class="file-list-preview">
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot blue"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot green"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-              </div>
-              <div class="file-list-preview">
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot blue"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot green"></div><div class="file-bar"></div></div>
-                <div class="file-row" aria-hidden="true"><div class="file-dot"></div><div class="file-bar"></div></div>
-              </div>
-            </div>
+          <div class="card-text">
+            <h4>文件共享。</h4>
+            <p>远程访问并操作其他设备的文件。</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3: 基础功能 -->
+  <!-- Section 4: 基础功能 -->
   <section class="section section-features">
     <div class="container">
-      <div class="section-header align-left">
-        <h2>基础功能，全面优化。</h2>
+      <div class="section-header-row fade-up">
+        <div class="section-header align-left">
+          <h2>基础功能，全面升级。</h2>
+        </div>
+        <div class="section-nav-arrows" aria-label="滚动控制">
+          <button class="nav-arrow nav-arrow-left" data-carousel="features" data-dir="-1" aria-label="向左滚动">
+            <img src="assets/icon-arrow-left.svg" alt="">
+          </button>
+          <button class="nav-arrow nav-arrow-right" data-carousel="features" data-dir="1" aria-label="向右滚动">
+            <img src="assets/icon-arrow-right.svg" alt="">
+          </button>
+        </div>
       </div>
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-card">
-            <div class="feature-phone-mockup">
-              <div class="chat-bubbles-mini">
-                <div class="mini-bubble">
-                  <span class="mini-filename">Flix_2.0.4.0_android.apk</span>
-                  <div class="mini-meta"><span>90.4 MB</span><span class="speed">59 MB/s</span></div>
-                  <div class="mini-progress"><div class="mini-progress-fill" style="width:40%"></div></div>
-                </div>
-                <div class="mini-bubble wide">
-                  <span class="mini-filename">张伟_毕业论文文件合集.zip</span>
-                  <div class="mini-meta"><span>483.2 MB</span><span class="speed">199 MB/s</span></div>
-                  <div class="mini-progress"><div class="mini-progress-fill" style="width:38%"></div></div>
-                </div>
-                <div class="mini-bubble">
-                  <span class="mini-filename">2026 年第一季度工作计划.pdf</span>
-                  <div class="mini-meta"><span>159 MB</span><span class="speed">68 MB/s</span></div>
-                  <div class="mini-progress"><div class="mini-progress-fill" style="width:38%"></div></div>
-                </div>
-              </div>
-            </div>
+    </div>
+    <div class="cards-carousel fade-up" id="carousel-features">
+      <div class="cards-track">
+        <div class="card-item card-wide">
+          <div class="card-image card-bg-image" data-smooth-corners style="background-image: url('assets/card-feat-desktop-bg.png')">
+            <img src="assets/card-feat-desktop.png" alt="全新大屏体验" class="card-fill-img">
           </div>
-          <h4>速度更快。</h4>
-          <p>继续优化基础传输速度。</p>
+          <div class="card-text">
+            <h4>全新大屏体验。</h4>
+            <p>重新设计大屏布局，充分利用大屏空间。</p>
+          </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-card">
-            <div class="feature-phone-mockup">
-              <div class="media-picker">
-                <div class="picker-header">
-                  <span>全部照片</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                </div>
-                <div class="picker-grid">
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb dark"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb dark"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb"></div>
-                  <div class="picker-thumb dark"></div>
-                </div>
-              </div>
-            </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-image" data-smooth-corners style="background-image: url('assets/card-feat-rightclick-bg.png')">
+            <img src="assets/card-feat-rightclick.png" alt="右键菜单快速发送" class="card-content-img">
           </div>
-          <h4>图片和视频选择器升级。</h4>
-          <p>合并图片和视频，交互升级。</p>
+          <div class="card-text">
+            <h4>右键菜单快速发送。</h4>
+            <p>在文件上右键，快速发送。</p>
+          </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-card">
-            <div class="feature-phone-mockup">
-              <div class="calendar-view">
-                <div class="cal-header">
-                  <span>查找历史记录</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                </div>
-                <div class="cal-grid">
-                  <div class="cal-row cal-weekdays">
-                    <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
-                  </div>
-                  <div class="cal-row"><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span></div>
-                  <div class="cal-row"><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-                  <div class="cal-row"><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span></div>
-                  <div class="cal-row"><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span class="cal-active">24</span><span>25</span></div>
-                  <div class="cal-row"><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span></span><span></span></div>
-                </div>
-              </div>
-            </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-feat-live.png" alt="无损传输 Live 图" class="card-phone-img">
           </div>
-          <h4>查找历史记录升级。</h4>
-          <p>支持日历视图，找记录更快。</p>
+          <div class="card-text">
+            <h4>无损传输 Live 图。</h4>
+            <p>Live 图片传前传后都能动。</p>
+          </div>
+        </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-feat-media.png" alt="图片和视频选择器升级" class="card-phone-img">
+          </div>
+          <div class="card-text">
+            <h4>图片和视频选择器升级。</h4>
+            <p>合并图片视频，重构交互。</p>
+          </div>
+        </div>
+        <div class="card-item card-small">
+          <div class="card-image card-bg-gray" data-smooth-corners>
+            <img src="assets/card-feat-calendar.png" alt="查找历史记录升级" class="card-phone-img">
+          </div>
+          <div class="card-text">
+            <h4>查找历史记录升级。</h4>
+            <p>支持日历视图，找记录更快。</p>
+          </div>
         </div>
       </div>
     </div>
@@ -309,5 +253,121 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      // Align carousel padding with container position
+      function alignCarousels() {
+        var container = document.querySelector('.section-chat .container') ||
+                        document.querySelector('.container');
+        if (!container) return;
+        var left = container.getBoundingClientRect().left;
+        var offset = Math.max(left, 20) + 'px';
+        document.querySelectorAll('.cards-track').forEach(function(track) {
+          track.style.paddingLeft = offset;
+          track.style.paddingRight = offset;
+        });
+      }
+      // Run after layout is ready
+      alignCarousels();
+      window.addEventListener('resize', alignCarousels);
+
+      // Mobile menu toggle
+      var menuBtn = document.getElementById('menu-btn');
+      var nav = document.getElementById('main-nav');
+      var header = document.querySelector('.header');
+      menuBtn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('nav-open');
+        header.classList.toggle('menu-active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      // Close menu on link click
+      nav.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      // Close menu on click outside header or on nav empty area
+      nav.addEventListener('click', function(e) {
+        if (e.target === nav) {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        }
+      });
+
+      document.addEventListener('click', function(e) {
+        if (nav.classList.contains('nav-open') && !header.contains(e.target) && !nav.contains(e.target)) {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        }
+      });
+
+      // Header scroll effect
+      var header = document.querySelector('.header');
+      window.addEventListener('scroll', function() {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      });
+
+      // Scroll reveal animation
+      var fadeEls = document.querySelectorAll('.fade-up');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      fadeEls.forEach(function(el, i) {
+        var parent = el.parentElement;
+        var siblings = Array.prototype.filter.call(parent.children, function(c) {
+          return c.classList.contains('fade-up');
+        });
+        var index = siblings.indexOf(el);
+        el.style.transitionDelay = (index * 0.1) + 's';
+        observer.observe(el);
+      });
+
+      // Carousel scroll & arrow state
+      function updateArrows(carouselName) {
+        var track = document.getElementById('carousel-' + carouselName).querySelector('.cards-track');
+        var section = track.closest('.section');
+        var leftBtn = section.querySelector('.nav-arrow-left');
+        var rightBtn = section.querySelector('.nav-arrow-right');
+        var atStart = track.scrollLeft <= 1;
+        var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+        leftBtn.classList.toggle('disabled', atStart);
+        rightBtn.classList.toggle('disabled', atEnd);
+      }
+
+      ['chat', 'tools', 'features'].forEach(function(name) {
+        var track = document.getElementById('carousel-' + name).querySelector('.cards-track');
+        track.addEventListener('scroll', function() { updateArrows(name); });
+        updateArrows(name);
+      });
+
+      document.querySelectorAll('.nav-arrow').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var carouselId = 'carousel-' + this.dataset.carousel;
+          var track = document.getElementById(carouselId).querySelector('.cards-track');
+          var dir = parseInt(this.dataset.dir);
+          var cardWidth = track.querySelector('.card-item').offsetWidth + 14;
+          track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
