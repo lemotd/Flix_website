@@ -1,0 +1,643 @@
+{
+  "文字图标色": {
+    "on_surface": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 1,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:47",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b3936f8df3ebcc1d2769c614b80aa58a704dd3fd/-1:-1",
+          "targetVariableName": "black/black_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_surface_secondary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.800000011920929,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:54",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:8b40bd017389bd33afbb99bfd7ac656c7ea428a1/-1:-1",
+          "targetVariableName": "black/black_80",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_surface_tertiary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.6000000238418579,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:55",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b3848d9ae913b2e7ed7f4be98cdd34b34a5e1345/-1:-1",
+          "targetVariableName": "black/black_60",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_surface_quaternary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.4000000059604645,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:56",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:5e891aa0fc5acf030ac2468555d0c8f7e76ae5a0/-1:-1",
+          "targetVariableName": "black/black_40",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_surface_octonary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.30000001192092896,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:430:10626",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:0c39cc85b4427400697284d5bb57ef6a61248623/-1:-1",
+          "targetVariableName": "black/black_30",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_surface_button_select": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2853:45729",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d350a535bfff354d6d91609a1fd4b487d030223/-1:-1",
+          "targetVariableName": "white/white_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "软件主色": {
+    "primary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392157137393951,
+          0.5098039507865906,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#3482FF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:50",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:2ee0443d63d935cb01193e98edc57e94f58a45c4/-1:-1",
+          "targetVariableName": "blue/blue_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "on_primary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:53",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d350a535bfff354d6d91609a1fd4b487d030223/-1:-1",
+          "targetVariableName": "white/white_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "背景色": {
+    "surface": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:58",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d350a535bfff354d6d91609a1fd4b487d030223/-1:-1",
+          "targetVariableName": "white/white_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "surface_low": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.929411768913269,
+          0.9372549057006836,
+          0.9490196108818054
+        ],
+        "alpha": 1,
+        "hex": "#EDEFF2"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2:59",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3bd38ed76c8eafd1502fd133527b95056da97734/-1:-1",
+          "targetVariableName": "blue/blue_bg",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "surface_high": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:4:82",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d350a535bfff354d6d91609a1fd4b487d030223/-1:-1",
+          "targetVariableName": "white/white_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "surface_pop_window": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.929411768913269,
+          0.9372549057006836,
+          0.9490196108818054
+        ],
+        "alpha": 1,
+        "hex": "#EDEFF2"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:4:83",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3bd38ed76c8eafd1502fd133527b95056da97734/-1:-1",
+          "targetVariableName": "blue/blue_bg",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "元素色": {
+    "surface_container": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.05999999865889549,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:4:96",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:324ad69804efeff0c521a67141e100c9a9f94901/-1:-1",
+          "targetVariableName": "black/black_6",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "surface_container_high": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.10000000149011612,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:16:916",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:fc0d530f6c1c1456ceee59648c0947e9ebc9b3cd/-1:-1",
+          "targetVariableName": "black/black_10",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "container_list": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:4:109",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d350a535bfff354d6d91609a1fd4b487d030223/-1:-1",
+          "targetVariableName": "white/white_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "分割线色": {
+    "outline": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.10000000149011612,
+        "hex": "#000000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:4:164",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:fc0d530f6c1c1456ceee59648c0947e9ebc9b3cd/-1:-1",
+          "targetVariableName": "black/black_10",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "功能色": {
+    "警告色": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9803921580314636,
+          0.21960784494876862,
+          0.18039216101169586
+        ],
+        "alpha": 1,
+        "hex": "#FA382E"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:17:199",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a2f93687c4c197e1810bdeb5bd8a0fc46622549d/-1:-1",
+          "targetVariableName": "red/red_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "提示色": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.11372549086809158,
+          0.8039215803146362,
+          0.22745098173618317
+        ],
+        "alpha": 1,
+        "hex": "#1DCD3A"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:139:742",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:497799149c6a270d6e998b44b60ec5a35fa053c6/-1:-1",
+          "targetVariableName": "green/green_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "高亮紫": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.46666666865348816,
+          0.40392157435417175,
+          0.9764705896377563
+        ],
+        "alpha": 1,
+        "hex": "#7767F9"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:478:15131",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1137b6355191f4893df1edc376c890647ec24497/-1:-1",
+          "targetVariableName": "purple/purple_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "黄色提示色": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.6235294342041016,
+          0.019607843831181526
+        ],
+        "alpha": 1,
+        "hex": "#FF9F05"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:622:40675",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:6eef6f8ed04cf230487d14dc37a00717971a0b5f/-1:-1",
+          "targetVariableName": "yellow/yellow_100",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "插图色": {
+    "illustration_primary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.729411780834198,
+          0.772549033164978,
+          0.8392156958580017
+        ],
+        "alpha": 1,
+        "hex": "#BAC5D6"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:1519:33757",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:6c7d87a7eb08672d2b7550e3ab6605d597e9efd9/-1:-1",
+          "targetVariableName": "gray/grey_illustration_light_1",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "illustration_secondary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8078431487083435,
+          0.8349019885063171,
+          0.8784313797950745
+        ],
+        "alpha": 1,
+        "hex": "#CED5E0"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:1519:33758",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e57c07848fcd0f05a54317156aa981dc58bff3b6/-1:-1",
+          "targetVariableName": "gray/grey_illustration_light_2",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "illustration_tertiary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8745098114013672,
+          0.887843132019043,
+          0.9215686321258545
+        ],
+        "alpha": 1,
+        "hex": "#DFE2EB"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:1519:33759",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e7767b4a31cd0d0893d721fd608981e9f0abcb76/-1:-1",
+          "targetVariableName": "gray/grey_illustration_light_3",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    },
+    "illustration_quaternary": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9137254953384399,
+          0.9215686321258545,
+          0.9333333373069763
+        ],
+        "alpha": 1,
+        "hex": "#E9EBEE"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:1519:33760",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:6fde595931821b8f659b02af458080a184c5439f/-1:-1",
+          "targetVariableName": "gray/grey_illustration_light_4",
+          "targetVariableSetId": "VariableCollectionId:a469a598f47ffd66ef63579018724a58bc4ce57b/-1:-1",
+          "targetVariableSetName": "颜色合集（请勿调用）"
+        },
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "light mode"
+  }
+}
