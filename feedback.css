@@ -1,0 +1,148 @@
+/* ===== Feedback Page ===== */
+.feedback-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 300px 0;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feedback-header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 6px;
+}
+
+.feedback-header p {
+  font-size: 18px;
+  color: var(--on-surface-tertiary);
+  font-weight: 400;
+}
+
+/* Feedback rows */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-row {
+  display: flex;
+  padding-top: 40px;
+}
+
+.feedback-label {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+
+.feedback-label h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-bottom: 1px;
+}
+
+.feedback-label p {
+  font-size: 14px;
+  color: var(--on-surface-tertiary);
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+/* Links column */
+.feedback-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.feedback-link-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-link-action {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  transition: opacity 0.2s;
+}
+
+.feedback-link-action:hover {
+  opacity: 0.7;
+}
+
+.feedback-arrow {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.feedback-link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-link-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.feedback-link-sub {
+  font-size: 12px;
+  color: var(--on-surface-tertiary);
+  font-weight: 400;
+  line-height: 1.33;
+  margin-top: 2px;
+  padding-left: 29px;
+}
+
+/* Footer spacing override */
+.feedback-main + .footer {
+  margin-top: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .feedback-main {
+    padding: 110px 100px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-main {
+    padding: 80px 24px 0;
+  }
+
+  .feedback-header h1 {
+    font-size: 26px;
+  }
+
+  .feedback-header p {
+    font-size: 15px;
+  }
+
+  .feedback-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .feedback-label {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-main {
+    padding: 60px 20px 0;
+  }
+}
