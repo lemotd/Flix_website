@@ -889,10 +889,6 @@ body {
     gap: 12px;
   }
 
-  .nav-link {
-    font-size: 12px;
-  }
-
   .card-item.card-small {
     width: 200px;
   }
@@ -903,6 +899,7 @@ body {
 
   .card-image {
     height: 240px;
+    border-radius: 20px;
   }
 
   .card-image .card-phone-img,
