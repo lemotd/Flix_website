@@ -1,5 +1,7 @@
 # Flix 2.0 官网
 
+🔗 **在线预览：[https://lemotd.github.io/Flix_website/](https://lemotd.github.io/Flix_website/)**
+
 基于 Figma 设计稿实现的 Flix 2.0 产品官网，纯静态页面，无框架依赖。
 
 ## 项目结构
