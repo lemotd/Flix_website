@@ -619,6 +619,11 @@ body {
   aspect-ratio: 1240 / 2617;
 }
 
+/* "熟悉的聊天交互" card - phone extends above card per design */
+.section-chat .card-item:first-child .card-phone-img {
+  top: -107px;
+}
+
 /* Card image that fills the entire card area */
 .card-bg-fill {
   background: var(--primary);
@@ -627,13 +632,13 @@ body {
 .card-bg-fill .card-fill-img,
 .card-bg-image .card-fill-img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  height: 92%;
   max-width: none;
   max-height: none;
-  transform: none;
   object-fit: contain;
 }
 
@@ -677,8 +682,8 @@ body {
 .card-image .card-notify-img {
   position: absolute;
   left: -40%;
-  top: 40px;
-  transform: none;
+  top: 50%;
+  transform: translateY(-50%);
   width: 130%;
   max-width: none;
   max-height: none;
@@ -1023,6 +1028,10 @@ body {
   .card-image .card-phone-menu {
     width: 160px;
     top: 36px;
+  }
+
+  .section-chat .card-item:first-child .card-phone-img {
+    top: -89px;
   }
 }
 

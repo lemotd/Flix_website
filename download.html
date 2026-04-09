@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>软件帮助 - Flix 2.0</title>
+  <title>下载 - Flix 2.0</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="feedback.css">
-  <link rel="stylesheet" href="help.css">
+  <link rel="stylesheet" href="download.css">
 </head>
 <body>
   <!-- Header / Nav -->
@@ -19,10 +18,10 @@
       </div>
       <nav class="nav" id="main-nav" aria-label="主导航">
         <a href="index.html" class="nav-link">概览</a>
-        <a href="download.html" class="nav-link">下载</a>
+        <a href="download.html" class="nav-link active">下载</a>
         <a href="feedback.html" class="nav-link">反馈</a>
         <a href="changelog.html" class="nav-link">日志</a>
-        <a href="help.html" class="nav-link active">帮助</a>
+        <a href="help.html" class="nav-link">帮助</a>
         <a href="about.html" class="nav-link">关于</a>
         <a href="#" class="nav-link">个人中心</a>
       </nav>
@@ -32,65 +31,100 @@
     </div>
   </header>
 
-  <!-- Help Content -->
-  <main class="feedback-main help-main">
-    <div class="feedback-header fade-up">
-      <h1 class="page-title">软件帮助</h1>
-      <p class="page-subtitle">常见问题快速解决</p>
+  <!-- Download Content -->
+  <main class="download-main">
+    <div class="download-header fade-up">
+      <h1 class="page-title">下载 Flix</h1>
+      <p class="page-subtitle">V2.0.4　2026年4月20日 更新</p>
     </div>
 
-    <div class="help-section fade-up">
+    <div class="download-list fade-up">
 
-      <!-- Q1: 无法发现设备 -->
-      <div class="help-item">
-        <h3 class="help-question">无法发现设备 / 无法传输 / 传输进度卡住</h3>
-        <p class="help-text">请先检查设备是否都是最新版本（最好确保是同一个版本），可以在本网站或加入官方 QQ 群获取最新版。</p>
-        <p class="help-text">Windows 设备可以参照以下步骤检查防火墙：</p>
-
-        <!-- Steps 1 & 2 side by side -->
-        <div class="help-steps-row">
-          <div class="help-step-card">
-            <p class="help-step-text">1.打开 Windows 安全中心，<br>点击"防火墙和网络保护"</p>
-            <div class="help-step-img">
-              <img src="assets/help/help-firewall-step1.png" alt="打开防火墙和网络保护" loading="lazy">
-            </div>
-          </div>
-          <div class="help-step-card">
-            <p class="help-step-text">2.点击<br>"允许应用通过防火墙"</p>
-            <div class="help-step-img">
-              <img src="assets/help/help-firewall-step2.png" alt="允许应用通过防火墙" loading="lazy">
-            </div>
+      <!-- Windows -->
+      <div class="download-row">
+        <div class="download-platform">
+          <img class="platform-icon" src="assets/download/icon-windows.svg" width="30" height="30" alt="Windows">
+          <div class="platform-info">
+            <h3>Windows</h3>
+            <p>Windows 10 及以上</p>
           </div>
         </div>
-
-        <!-- Step 3 full width -->
-        <div class="help-step-wide">
-          <p class="help-step-text">3.在弹出的窗口中，先点击"更改设置"，<br>再在列表中找到 Flix，<br>在右边勾选"专用"和"公用"，<br>操作完后点击保存</p>
-          <div class="help-step-img">
-            <img src="assets/help/help-firewall-step3.png" alt="勾选专用和公用" loading="lazy">
-          </div>
+        <div class="download-links">
+          <a href="https://my.feishu.cn/drive/folder/BWxKfGNX6lpqEYdA6EJcYddGn7c?from=from_copylink" class="download-link-action" target="_blank" rel="noopener">
+            <img class="download-icon" src="assets/download/icon-download.svg" width="21" height="21" alt="">
+            <span>下载（.exe)</span>
+          </a>
         </div>
-
-        <p class="help-text">在部分内网环境下（如校园网、公司网等），由于存在隔离，可能无法自动发现设备，请尝试使用 app 内的手动添加功能（软件首页右上角加号内）。</p>
       </div>
 
-      <div class="help-divider"></div>
-
-      <!-- Q2: DLL 缺失 -->
-      <div class="help-item">
-        <h3 class="help-question">Windows 无法打开软件 / 提示 dll 缺失</h3>
-        <div class="help-img-full">
-          <img src="assets/help/help-dll-error.jpg" alt="DLL 缺失错误提示" loading="lazy">
+      <!-- Android -->
+      <div class="download-row">
+        <div class="download-platform">
+          <img class="platform-icon" src="assets/download/icon-android.svg" width="30" height="30" alt="Android">
+          <div class="platform-info">
+            <h3>Android</h3>
+            <p>Android 6 及以上</p>
+          </div>
         </div>
-        <p class="help-text">请前往<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank" rel="noopener noreferrer">下载</a>并安装缺失库。</p>
+        <div class="download-links">
+          <a href="https://my.feishu.cn/drive/folder/OHvqfhfM8luBkZdQhU5c5vNHnje?from=from_copylink" class="download-link-action" target="_blank" rel="noopener">
+            <img class="download-icon" src="assets/download/icon-download.svg" width="21" height="21" alt="">
+            <span>下载（.apk）</span>
+          </a>
+          <div class="download-note-divider"></div>
+          <p class="download-note">也可前往 酷安、小米应用商店 等各大应用商店下载</p>
+        </div>
       </div>
 
-      <div class="help-divider"></div>
+      <!-- iOS -->
+      <div class="download-row">
+        <div class="download-platform">
+          <img class="platform-icon" src="assets/download/icon-apple.svg" width="30" height="30" alt="iOS">
+          <div class="platform-info">
+            <h3>iOS</h3>
+            <p>iOS 14 及以上</p>
+          </div>
+        </div>
+        <div class="download-links">
+          <a href="https://apps.apple.com/cn/app/flix/id6478839197" class="download-link-action" target="_blank" rel="noopener">
+            <img class="download-icon" src="assets/download/icon-arrow-link.svg" width="21" height="21" alt="">
+            <span>前往 AppStore 下载</span>
+          </a>
+        </div>
+      </div>
 
-      <!-- Q3: 获取日志 -->
-      <div class="help-item">
-        <h3 class="help-question">如何获取软件日志</h3>
-        <p class="help-text">进入"关于我们"页面，双击底部的版本号，即可获取软件日志。</p>
+      <!-- macOS -->
+      <div class="download-row">
+        <div class="download-platform">
+          <img class="platform-icon" src="assets/download/icon-apple.svg" width="30" height="30" alt="macOS">
+          <div class="platform-info">
+            <h3>macOS</h3>
+            <p>macOS 12 及以上</p>
+          </div>
+        </div>
+        <div class="download-links">
+          <a href="https://my.feishu.cn/drive/folder/DVhrfmoEtllZdqdhWm0ct5mGnOd?from=from_copylink" class="download-link-action" target="_blank" rel="noopener">
+            <img class="download-icon" src="assets/download/icon-download.svg" width="21" height="21" alt="">
+            <span>下载（.dmg)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Linux -->
+      <div class="download-row">
+        <div class="download-platform">
+          <img class="platform-icon" src="assets/download/icon-linux.svg" width="30" height="30" alt="Linux">
+          <div class="platform-info">
+            <h3>Linux</h3>
+            <p>Debian Linux 11 及以上<br>Ubuntu Linux 20.04 LTS 及以上</p>
+          </div>
+        </div>
+        <div class="download-links">
+          <a href="https://my.feishu.cn/drive/folder/CE8DfKUbTljqDcdh91Cc7SHSnCg?from=from_copylink" class="download-link-action" target="_blank" rel="noopener">
+            <img class="download-icon" src="assets/download/icon-download.svg" width="21" height="21" alt="">
+            <span>下载</span>
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -150,8 +184,6 @@
           el.classList.add('visible');
         });
       });
-
-      // Re-trigger animation when restored from bfcache
       window.addEventListener('pageshow', function(e) {
         if (e.persisted) {
           document.querySelectorAll('.fade-up').forEach(function(el) {

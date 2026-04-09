@@ -1,0 +1,188 @@
+/* ===== Download Page ===== */
+.download-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 200px 0;
+}
+
+.download-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.download-header .page-title {
+  font-size: 32px;
+}
+
+.download-header .page-subtitle {
+  font-size: 18px;
+  color: var(--on-surface-tertiary);
+  margin-top: 4px;
+}
+
+/* Download list */
+.download-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 20px;
+}
+
+/* Each row */
+.download-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Platform column */
+.download-platform {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.platform-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.platform-info h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.platform-info p {
+  font-size: 14px;
+  color: var(--on-surface-quaternary);
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 1px;
+}
+
+/* Links column */
+.download-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.download-link-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  transition: opacity 0.2s;
+}
+
+.download-link-action:hover {
+  opacity: 0.7;
+}
+
+.download-icon {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.download-link-action span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+/* Android note */
+.download-note-divider {
+  height: 1px;
+  background: var(--outline);
+  margin: 8px 0;
+}
+
+.download-note {
+  font-size: 14px;
+  color: var(--on-surface-quaternary);
+  font-weight: 400;
+  line-height: 19px;
+}
+
+/* Linux arch columns */
+.download-links-linux {
+  flex-direction: row;
+  gap: 30px;
+}
+
+.download-arch-group {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  flex-shrink: 0;
+}
+
+.download-arch-label {
+  font-size: 14px;
+  color: var(--on-surface-quaternary);
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.download-arch-divider {
+  height: 1px;
+  background: var(--outline);
+  margin: 8px 0;
+}
+
+.download-arch-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Footer spacing */
+.download-main + .footer {
+  margin-top: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .download-main {
+    padding: 110px 100px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-main {
+    padding: 80px 24px 0;
+  }
+
+  .download-list {
+    gap: 40px;
+  }
+
+  .download-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .download-platform {
+    width: 100%;
+  }
+
+  .download-links-linux {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .download-arch-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-main {
+    padding: 60px 20px 0;
+  }
+}
