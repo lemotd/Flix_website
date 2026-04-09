@@ -10,16 +10,6 @@
   margin-bottom: 50px;
 }
 
-.download-header .page-title {
-  font-size: 32px;
-}
-
-.download-header .page-subtitle {
-  font-size: 18px;
-  color: var(--on-surface-tertiary);
-  margin-top: 4px;
-}
-
 /* Download list */
 .download-list {
   display: flex;
