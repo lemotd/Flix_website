@@ -288,6 +288,13 @@ body {
   justify-content: space-between;
 }
 
+.logo {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
 .logo svg {
   height: 17px;
   display: block;
