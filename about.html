@@ -207,8 +207,9 @@
       var footerH = document.querySelector('.footer').offsetHeight;
       var mainStyle = getComputedStyle(document.querySelector('.about-main'));
       var mainPadTop = parseInt(mainStyle.paddingTop, 10) || 0;
+      var mainMarginTop = parseInt(mainStyle.marginTop, 10) || 0;
       var titleMargin = parseInt(getComputedStyle(document.querySelector('.feedback-header')).marginBottom, 10) || 0;
-      var usedH = mainPadTop + titleH + titleMargin + footerH + 30;
+      var usedH = mainPadTop + mainMarginTop + titleH + titleMargin + footerH + 30;
       var containerH = Math.max(window.innerHeight - usedH, 300);
       container.style.height = containerH + 'px';
 
@@ -312,7 +313,7 @@
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function() {
           // Recalculate container height to fit viewport
-          var newUsedH = mainPadTop + titleH + titleMargin + footerH + 30;
+          var newUsedH = mainPadTop + mainMarginTop + titleH + titleMargin + footerH + 30;
           var newContainerH = Math.max(window.innerHeight - newUsedH, 300);
           container.style.height = newContainerH + 'px';
 

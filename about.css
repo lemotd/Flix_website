@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   /* clip left/right/bottom edges, but leave top open for falling cards */
-  clip-path: inset(-200px 0 0 0);
+  clip-path: inset(-999px 0 0 0);
   overflow: visible;
   cursor: grab;
   user-select: none;
@@ -76,6 +76,8 @@
   max-width: none;
   padding-left: 0;
   padding-right: 0;
+  margin-top: -66px;
+  padding-top: 176px;
 }
 
 .about-main .feedback-header {
@@ -86,6 +88,11 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .about-main {
+    margin-top: -66px;
+    padding-top: 146px;
+  }
+
   .physics-container {
     height: auto;
   }
@@ -111,6 +118,11 @@
 }
 
 @media (max-width: 480px) {
+  .about-main {
+    margin-top: -66px;
+    padding-top: 126px;
+  }
+
   .about-card {
     padding: 7px 12px 7px 7px;
     gap: 8px;
