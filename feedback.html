@@ -20,9 +20,9 @@
         <a href="index.html" class="nav-link">概览</a>
         <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="nav-link">下载</a>
         <a href="feedback.html" class="nav-link active">反馈</a>
-        <a href="#" class="nav-link">日志</a>
-        <a href="#" class="nav-link">帮助</a>
-        <a href="#" class="nav-link">关于</a>
+        <a href="changelog.html" class="nav-link">日志</a>
+        <a href="help.html" class="nav-link">帮助</a>
+        <a href="about.html" class="nav-link">关于</a>
         <a href="#" class="nav-link">个人中心</a>
       </nav>
       <button class="menu-btn" id="menu-btn" aria-label="菜单" aria-expanded="false">
@@ -34,8 +34,8 @@
   <!-- Feedback Content -->
   <main class="feedback-main">
     <div class="feedback-header fade-up">
-      <h1>反馈沟通</h1>
-      <p>遇到问题？欢迎通过以下渠道联系我们</p>
+      <h1 class="page-title">反馈沟通</h1>
+      <p class="page-subtitle">遇到问题？欢迎通过以下渠道联系我们</p>
     </div>
 
     <div class="feedback-list fade-up">
@@ -168,6 +168,23 @@
           el.style.transitionDelay = (i * 0.1) + 's';
           el.classList.add('visible');
         });
+      });
+
+      // Re-trigger animation when restored from bfcache
+      window.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+          document.querySelectorAll('.fade-up').forEach(function(el) {
+            el.classList.remove('visible');
+          });
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              document.querySelectorAll('.fade-up').forEach(function(el, i) {
+                el.style.transitionDelay = (i * 0.1) + 's';
+                el.classList.add('visible');
+              });
+            });
+          });
+        }
       });
     })();
   </script>

@@ -1,0 +1,152 @@
+/* ===== Help Page ===== */
+.help-main {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 60px;
+}
+
+.help-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-item {
+  padding: 40px 0;
+}
+
+.help-question {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.help-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--on-surface-tertiary);
+  margin-bottom: 16px;
+}
+
+.help-text + .help-text {
+  margin-top: -12px;
+}
+
+.help-text a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.help-text a:hover {
+  opacity: 0.7;
+}
+
+/* Firewall steps: 1 & 2 side by side */
+.help-steps-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.help-step-card {
+  flex: 1;
+  background: var(--surface-container);
+  border-radius: 20px;
+  padding: 24px 24px 0;
+  overflow: hidden;
+}
+
+.help-step-text {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.help-step-img {
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.help-step-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Step 3: full width card */
+.help-step-wide {
+  background: var(--surface-container);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.help-step-wide .help-step-text {
+  flex-shrink: 0;
+  text-align: left;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.help-step-wide .help-step-img {
+  flex: 1;
+  border-radius: 12px;
+}
+
+/* DLL error image */
+.help-img-full {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.help-img-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Divider between questions */
+.help-divider {
+  height: 1px;
+  background: var(--outline);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .help-main {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .help-steps-row {
+    flex-direction: column;
+  }
+
+  .help-step-wide {
+    flex-direction: column;
+  }
+
+  .help-step-wide .help-step-text {
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .help-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,150 @@
+/* ===== About Page ===== */
+
+/* Physics container */
+.physics-container {
+  position: relative;
+  width: 100%;
+  /* clip left/right/bottom edges, but leave top open for falling cards */
+  clip-path: inset(-200px 0 0 0);
+  overflow: visible;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.physics-container:active {
+  cursor: grabbing;
+}
+
+/* Cards are absolutely positioned by Matter.js */
+.about-card {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
+  border-radius: 100px;
+  background: var(--surface-high);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+  pointer-events: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.about-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.about-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.about-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.about-desc {
+  font-size: 14px;
+  color: var(--on-surface-tertiary);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Override feedback-main for about page: full width, no side padding */
+.about-main {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-main .feedback-header {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .physics-container {
+    height: auto;
+  }
+
+  .about-card {
+    padding: 8px 14px 8px 8px;
+    gap: 10px;
+    border-radius: 100px;
+  }
+
+  .about-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-name {
+    font-size: 13px;
+  }
+
+  .about-desc {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 7px 12px 7px 7px;
+    gap: 8px;
+  }
+
+  .about-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .about-name {
+    font-size: 12px;
+  }
+
+  .about-desc {
+    font-size: 10px;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .about-card {
+    position: relative;
+    visibility: visible;
+    display: inline-flex;
+    margin: 8px;
+  }
+
+  .physics-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    cursor: default;
+  }
+}

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>更新日志 - Flix 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="changelog.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <svg width="40" height="17" viewBox="0 0 39.9996 16.9015" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.2398 1.54752e-07C12.384 1.5482e-07 12.4561 0.0004103 12.5054 0.0302736C12.5486 0.0564541 12.5812 0.0972658 12.5963 0.145508C12.6133 0.200551 12.5956 0.27049 12.5611 0.410156L12.0347 2.54102C12.0126 2.63045 12.0019 2.67556 11.9771 2.70898C11.9551 2.73855 11.9252 2.76205 11.8912 2.77637C11.8527 2.79258 11.8061 2.79199 11.7134 2.79199H6.87848C6.10619 2.79199 5.71946 2.79225 5.42438 2.94238C5.16477 3.07466 4.95314 3.28629 4.82087 3.5459C4.67059 3.84101 4.67048 4.22746 4.67048 5V6.79688C4.67048 6.91245 4.67053 6.97043 4.69294 7.01465C4.71278 7.05359 4.74481 7.08563 4.78376 7.10547C4.82798 7.12792 4.88592 7.12793 5.00153 7.12793H10.7496C10.8937 7.12793 10.9658 7.12835 11.0152 7.1582C11.0583 7.18439 11.091 7.22524 11.106 7.27344C11.123 7.32847 11.1054 7.39848 11.0709 7.53809L10.5445 9.66895C10.5223 9.75864 10.5109 9.80346 10.4859 9.83691C10.4639 9.86639 10.4348 9.89 10.4009 9.9043C10.3624 9.92052 10.3159 9.91992 10.2232 9.91992H5.00153C4.88601 9.91992 4.82796 9.91998 4.78376 9.94238C4.74481 9.96222 4.71278 9.99426 4.69294 10.0332C4.67044 10.0774 4.67048 10.1354 4.67048 10.251V16.5703C4.67048 16.686 4.67054 16.7439 4.64801 16.7881C4.62817 16.827 4.59614 16.8591 4.55719 16.8789C4.51298 16.9012 4.45492 16.9014 4.33942 16.9014H1.59137C1.47583 16.9014 1.41782 16.9013 1.3736 16.8789C1.33466 16.8591 1.30262 16.827 1.28278 16.7881C1.26028 16.7439 1.26032 16.6859 1.26032 16.5703V5.51855C1.26032 3.58728 1.26054 2.62155 1.6363 1.88379C1.96699 1.23476 2.49508 0.706673 3.14411 0.375977C3.88187 0.000217209 4.8476 1.56022e-07 6.77887 1.54752e-07H12.2398ZM17.7466 1.54752e-07C17.8623 1.60503e-07 17.9202 -2.07769e-05 17.9644 0.0224611C18.0034 0.0423029 18.0354 0.0743397 18.0552 0.113281C18.0776 0.157499 18.0777 0.215511 18.0777 0.331055V12.835C18.0777 13.6044 18.366 13.9373 18.3765 13.9492C18.6736 14.2773 19.3428 14.2803 19.3531 14.2803H19.731C19.9744 14.2803 20.0965 14.2805 20.1793 14.3311C20.2516 14.3754 20.3053 14.4451 20.3297 14.5264C20.3573 14.6193 20.3262 14.7373 20.2642 14.9727L19.8218 16.6543C19.7986 16.7426 19.7863 16.7865 19.7613 16.8193C19.7392 16.8483 19.7099 16.8708 19.6763 16.8848C19.6382 16.9006 19.5927 16.9014 19.5015 16.9014H18.9625C17.0191 16.9013 15.9401 15.9056 15.9302 15.8965C14.8587 14.9005 14.8493 13.0614 14.8492 13.0313V0.331055C14.8492 0.215599 14.8494 0.157487 14.8716 0.113281C14.8915 0.0743652 14.9236 0.0423054 14.9625 0.0224611C15.0067 -6.81334e-05 15.0646 1.89221e-07 15.1802 1.54752e-07H17.7466ZM25.1011 4.16406C25.2942 4.16406 25.3907 4.16463 25.4644 4.20215C25.5293 4.23522 25.5827 4.28764 25.6158 4.35254C25.6533 4.42627 25.6529 4.52294 25.6529 4.71582V16.3496C25.6529 16.5425 25.6532 16.6392 25.6158 16.7129C25.5827 16.7778 25.5293 16.8312 25.4644 16.8643C25.3907 16.9016 25.294 16.9014 25.1011 16.9014H23.0025C22.8097 16.9014 22.7129 16.9018 22.6392 16.8643C22.5743 16.8312 22.5219 16.7778 22.4888 16.7129C22.4513 16.6391 22.4507 16.5427 22.4507 16.3496V4.71582C22.4507 4.52291 22.4513 4.42627 22.4888 4.35254C22.5219 4.28779 22.5745 4.23519 22.6392 4.20215C22.713 4.16458 22.8096 4.16406 23.0025 4.16406H25.1011ZM30.857 4.16406C30.9244 4.16406 30.9585 4.16426 30.9888 4.17383C31.0156 4.1823 31.0408 4.19647 31.0621 4.21484C31.086 4.23563 31.104 4.2642 31.1392 4.32129L32.983 7.30762C33.0808 7.46598 33.1302 7.54571 33.192 7.57129C33.2457 7.59342 33.3063 7.59123 33.359 7.56641C33.4194 7.53787 33.4643 7.4567 33.5543 7.29395L35.191 4.33496C35.2252 4.273 35.2427 4.24233 35.2672 4.21973C35.2888 4.19969 35.3143 4.18408 35.3424 4.1748C35.3739 4.16438 35.4094 4.16406 35.48 4.16406H38.065C38.2617 4.16406 38.3604 4.16409 38.4156 4.20508C38.4636 4.24096 38.4942 4.29666 38.4986 4.35645C38.5034 4.42497 38.4501 4.50814 38.3443 4.67383L34.9029 10.0635C34.8623 10.127 34.8416 10.1592 34.8336 10.1934C34.8265 10.2235 34.826 10.2549 34.8326 10.2852C34.8401 10.3195 34.8604 10.3518 34.9 10.416L38.5924 16.3965C38.6941 16.5613 38.7446 16.6439 38.7388 16.7119C38.7338 16.7711 38.7035 16.825 38.6558 16.8604C38.601 16.901 38.504 16.9014 38.3101 16.9014H35.7291C35.6622 16.9014 35.6284 16.9011 35.5982 16.8916C35.5717 16.8832 35.5471 16.8697 35.5259 16.8516C35.5019 16.8309 35.4842 16.802 35.4488 16.7451L33.3433 13.3613C33.2458 13.2045 33.1968 13.1261 33.1353 13.1006C33.0816 13.0784 33.0209 13.0798 32.9683 13.1045C32.908 13.1328 32.8629 13.2136 32.773 13.375L30.9019 16.7314C30.8675 16.7932 30.8502 16.8242 30.8257 16.8467C30.8041 16.8665 30.7784 16.8814 30.7506 16.8906C30.719 16.901 30.6836 16.9014 30.6129 16.9014H28.0172C27.8233 16.9014 27.7263 16.901 27.6715 16.8604C27.6238 16.825 27.5934 16.7711 27.5884 16.7119C27.5828 16.6439 27.6339 16.5613 27.7359 16.3965L31.3765 10.5117C31.4156 10.4486 31.4353 10.4166 31.4429 10.3828C31.4497 10.3528 31.4497 10.321 31.4429 10.291C31.4352 10.2573 31.4154 10.2259 31.3765 10.1631L27.9713 4.66992C27.8691 4.50508 27.8174 4.42252 27.8228 4.35449C27.8277 4.29525 27.8581 4.24054 27.9058 4.20508C27.9607 4.1644 28.0582 4.16406 28.2525 4.16406H30.857ZM25.1275 1.54752e-07C25.3204 1.60702e-07 25.4171 -0.000384165 25.4908 0.0371095C25.5557 0.0701792 25.6081 0.123574 25.6412 0.188477C25.6787 0.262253 25.6793 0.35864 25.6793 0.551758V1.87305C25.6793 2.06614 25.6788 2.16256 25.6412 2.23633C25.6081 2.30115 25.5556 2.35365 25.4908 2.38672C25.417 2.4243 25.3205 2.4248 25.1275 2.4248H22.9507C22.7577 2.4248 22.6612 2.4243 22.5875 2.38672C22.5226 2.35366 22.4701 2.30116 22.4371 2.23633C22.3995 2.16256 22.399 2.06614 22.399 1.87305V0.551758C22.399 0.358619 22.3995 0.262256 22.4371 0.188477C22.4701 0.123574 22.5226 0.0701792 22.5875 0.0371095C22.6612 -0.00036398 22.7579 1.58039e-07 22.9507 1.54752e-07H25.1275Z" fill="currentColor"/>
+        </svg>
+      </div>
+      <nav class="nav" id="main-nav" aria-label="主导航">
+        <a href="index.html" class="nav-link">概览</a>
+        <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="nav-link">下载</a>
+        <a href="feedback.html" class="nav-link">反馈</a>
+        <a href="changelog.html" class="nav-link active">日志</a>
+        <a href="help.html" class="nav-link">帮助</a>
+        <a href="about.html" class="nav-link">关于</a>
+        <a href="#" class="nav-link">个人中心</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="菜单" aria-expanded="false">
+        <span class="menu-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Changelog Content -->
+  <main class="feedback-main changelog-main">
+    <div class="feedback-header fade-up">
+      <h1 class="page-title">更新日志</h1>
+    </div>
+
+    <div class="changelog-list fade-up">
+
+      <!-- 1.11.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.11.0</h3>
+          <span class="changelog-date">2025.11.16 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-optimize">优化</span>二维码的显示样式，二维码始终为黑色</li>
+          <li><span class="tag tag-optimize">优化</span>传输性能，多文件传输更稳定</li>
+          <li><span class="tag tag-fix">修复</span>移动端小窗场景界面显示异常</li>
+          <li><span class="tag tag-fix">修复</span>部分场景弹窗字体显示异常</li>
+          <li><span class="tag tag-fix">修复</span>传输过程中息屏导致中断</li>
+          <li><span class="tag tag-fix">修复</span>点击文件或文件夹不能打开</li>
+          <li><span class="tag tag-fix">修复</span>取消传输文件夹失败</li>
+          <li><span class="tag tag-fix">修复</span>文件传输时，传输状态无法显示</li>
+          <li><span class="tag tag-fix">修复</span>文件名不合法导致传输失败</li>
+        </ul>
+      </div>
+
+      <!-- 1.8.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.8.1</h3>
+          <span class="changelog-date">2025.08.26 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-optimize">优化</span>PC 端关联码弹窗输入框焦点默认选中</li>
+          <li><span class="tag tag-optimize">优化</span>版本差异过大弹窗提示的策略</li>
+          <li><span class="tag tag-optimize">优化</span>部分页面 UI 显示</li>
+          <li><span class="tag tag-fix">修复</span>传输异常相关问题</li>
+          <li><span class="tag tag-fix">修复</span>勾选删除本地文件时无法删除</li>
+          <li><span class="tag tag-fix">修复</span>部分页面无法打开</li>
+        </ul>
+      </div>
+
+      <!-- 1.8.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.8.0</h3>
+          <span class="changelog-date">2025.08.08 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>删除聊天记录时可选直接删除本地文件</li>
+          <li><span class="tag tag-new">新增</span>对某台设备设备设置是否接受消息通知</li>
+          <li><span class="tag tag-optimize">优化</span>删除聊天记录时默认不删除本地文件</li>
+          <li><span class="tag tag-fix">修复</span>部分场景下列表文字显示异常</li>
+        </ul>
+      </div>
+
+      <!-- 1.7.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.7.0</h3>
+          <span class="changelog-date">2025.07.25 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>首页列表显示设备最近接收到的消息预览</li>
+          <li><span class="tag tag-new">新增</span>离线发送显示待发送的文件气泡</li>
+          <li><span class="tag tag-new">新增</span>历史记录保存时长，超过设定时长后会自动清除</li>
+          <li><span class="tag tag-new">新增</span>本地模式，开启后将隐藏所有在线功能</li>
+          <li><span class="tag tag-new">新增</span>拖拽发送确认弹窗可关闭</li>
+          <li><span class="tag tag-optimize">优化</span>精简网络弹窗的样式</li>
+          <li><span class="tag tag-optimize">优化</span>mac 端菜单栏图标显示样式</li>
+          <li><span class="tag tag-fix">修复</span>删除文件后仍然占用存储空间</li>
+          <li><span class="tag tag-fix">修复</span>部分场景下设备离线后手动刷新，设备会消失</li>
+          <li><span class="tag tag-fix">修复</span>部分页面在深色模式下显示异常</li>
+          <li><span class="tag tag-fix">修复</span>网页版安全性相关问题</li>
+        </ul>
+      </div>
+
+      <!-- 1.6.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.6.0</h3>
+          <span class="changelog-date">2025.06.10 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>云备份支持阿里云盘和城通网盘</li>
+          <li><span class="tag tag-new">新增</span>云备份支持新建文件夹</li>
+          <li><span class="tag tag-new">新增</span>云备份支持手动刷新</li>
+          <li><span class="tag tag-new">新增</span>发送 apk 支持系统应用</li>
+          <li><span class="tag tag-new">新增</span>文件可直接分享至三方应用</li>
+          <li><span class="tag tag-new">新增</span>预发送状态下可拖动到窗口内发送文件</li>
+          <li><span class="tag tag-new">新增</span>设置页可直接看到软件版本号</li>
+          <li><span class="tag tag-optimize">优化</span>部分页面的加载动画</li>
+          <li><span class="tag tag-fix">修复</span>桌面端无法拖动发送</li>
+          <li><span class="tag tag-fix">修复</span>手动添加的设备刷新后消失</li>
+          <li><span class="tag tag-fix">修复</span>移动端小窗状态下显示异常</li>
+          <li><span class="tag tag-fix">修复</span>部分 UI 显示异常</li>
+          <li><span class="tag tag-fix">修复</span>设置语言后无法退出页面</li>
+        </ul>
+      </div>
+
+      <!-- 1.5.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.5.1</h3>
+          <span class="changelog-date">2025.05.19 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>文件预发送，设备离线状态时可预先发送文件，待设备上线后自动发出</li>
+          <li><span class="tag tag-new">新增</span>文件云备份，可一键上传聊天内的文件至三方网盘，首批支持 Webdav、123网盘、坚果云</li>
+          <li><span class="tag tag-new">新增</span>文件气泡支持拖动另存为 / 发送到其他应用</li>
+          <li><span class="tag tag-new">新增</span>复制图片、视频、文件到剪贴板</li>
+          <li><span class="tag tag-new">新增</span>文字内容转发</li>
+          <li><span class="tag tag-new">新增</span>移动端发送图片 / 视频时可滑动快速选择文件</li>
+          <li><span class="tag tag-new">新增</span>Windows 端可在帮助页内修复防火墙问题</li>
+          <li><span class="tag tag-new">新增</span>部分文件类型图标</li>
+          <li><span class="tag tag-new">新增</span>点按检查更新按钮的 toast 反馈</li>
+          <li><span class="tag tag-optimize">优化</span>文件气泡快捷操作按钮的交互</li>
+          <li><span class="tag tag-optimize">优化</span>自定义文件保存目录弹窗中，自建文件后缀的操作提示</li>
+          <li><span class="tag tag-optimize">优化</span>弹窗更新提示的频率</li>
+          <li><span class="tag tag-optimize">优化</span>toast 动画效果</li>
+          <li><span class="tag tag-optimize">优化</span>文件转发页面的 UI</li>
+          <li><span class="tag tag-optimize">优化</span>右键 / 长按菜单的显示区域，不超出屏幕显示</li>
+          <li><span class="tag tag-optimize">优化</span>列表为空时的文案引导提示</li>
+          <li><span class="tag tag-fix">修复</span>手动连接的设备无法正常识别设备连接状态</li>
+          <li><span class="tag tag-fix">修复</span>手动添加的设备刷新后断连</li>
+          <li><span class="tag tag-fix">修复</span>部分页面深色模式显示异常</li>
+        </ul>
+      </div>
+
+      <!-- 1.4.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.4.0</h3>
+          <span class="changelog-date">2025.04.01 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>聊天页更多设置页，可对设备进行单独设置</li>
+          <li><span class="tag tag-new">新增</span>按照文件类型设置不同的文件保存位置</li>
+          <li><span class="tag tag-new">新增</span>网页端传输进度条显示</li>
+          <li><span class="tag tag-new">新增</span>最近文件页开关（设置-通用）</li>
+          <li><span class="tag tag-new">新增</span>发送消息快捷键自定义</li>
+          <li><span class="tag tag-new">新增</span>图片选择器适配浅色模式</li>
+          <li><span class="tag tag-new">新增</span>帮助页新增网页版相关内容</li>
+          <li><span class="tag tag-optimize">优化</span>设备发现的速度</li>
+          <li><span class="tag tag-optimize">优化</span>图片分类下的缩略图排版样式</li>
+          <li><span class="tag tag-optimize">优化</span>网页端大文件传输性能</li>
+          <li><span class="tag tag-optimize">优化</span>iOS 设置页 UI</li>
+          <li><span class="tag tag-optimize">优化</span>版本不一致提示弹窗内容，显示版本号</li>
+          <li><span class="tag tag-fix">修复</span>iOS 上部分页面无法侧滑返回</li>
+          <li><span class="tag tag-fix">修复</span>昵称设置异常</li>
+        </ul>
+      </div>
+
+      <!-- 1.3.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.3.1</h3>
+          <span class="changelog-date">2025.03.01 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-optimize">优化</span>弹出菜单动画</li>
+          <li><span class="tag tag-optimize">优化</span>Pad 端竖屏显示样式</li>
+          <li><span class="tag tag-optimize">优化</span>最近文件页的文件打开逻辑</li>
+          <li><span class="tag tag-optimize">优化</span>版本不一致的提示弹窗频次</li>
+          <li><span class="tag tag-fix">修复</span>内存泄漏和 cpu、gpu 占用异常</li>
+          <li><span class="tag tag-fix">修复</span>部分场景下网络弹窗会出现分割线</li>
+          <li><span class="tag tag-fix">修复</span>"发送到"页面无法显示</li>
+          <li><span class="tag tag-fix">修复</span>最近文件页部分文件无法打开</li>
+          <li><span class="tag tag-fix">修复</span>网页版深色模式下气泡显示异常</li>
+          <li><span class="tag tag-fix">修复</span>mac 端打开文件位置异常</li>
+        </ul>
+      </div>
+
+      <!-- 1.3.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.3.0</h3>
+          <span class="changelog-date">2025.02.16 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>文件转发</li>
+          <li><span class="tag tag-new">新增</span>修改其他设备名称备注</li>
+          <li><span class="tag tag-new">新增</span>网页版支持加密连接</li>
+          <li><span class="tag tag-new">新增</span>网页版支持修改端口</li>
+          <li><span class="tag tag-new">新增</span>网页版支持复制文字</li>
+          <li><span class="tag tag-new">新增</span>网页版增加网址链接显示</li>
+          <li><span class="tag tag-new">新增</span>更多文件类型图标</li>
+          <li><span class="tag tag-new">新增</span>两端版本不一致检测提醒</li>
+          <li><span class="tag tag-optimize">优化</span>整体流畅度</li>
+          <li><span class="tag tag-optimize">优化</span>页面背景色</li>
+          <li><span class="tag tag-optimize">优化</span>刷新按钮的位置</li>
+          <li><span class="tag tag-optimize">优化</span>离线状态下设备的图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>最近文件页长名称显示逻辑</li>
+          <li><span class="tag tag-optimize">优化</span>设置项的功能分类</li>
+          <li><span class="tag tag-optimize">优化</span>"发送到"页面样式</li>
+          <li><span class="tag tag-optimize">优化</span>首页本机设备名称显示长度</li>
+          <li><span class="tag tag-optimize">优化</span>单击可打开文件，详情页移入长按菜单内</li>
+          <li><span class="tag tag-fix">修复</span>桌面端转发内容后页面显示错误</li>
+          <li><span class="tag tag-fix">修复</span>剪贴板循环发送的问题</li>
+          <li><span class="tag tag-fix">修复</span>网页版点击连接码无法复制</li>
+        </ul>
+      </div>
+
+      <!-- 1.2.2 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.2.2</h3>
+          <span class="changelog-date">2024.12.30 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>部分页面的按键映射</li>
+          <li><span class="tag tag-new">新增</span>文件详情信息弹窗</li>
+          <li><span class="tag tag-new">新增</span>iOS 深色图标</li>
+          <li><span class="tag tag-optimize">优化</span>暂时移除 Windows 防火墙检测</li>
+          <li><span class="tag tag-optimize">优化</span>更多页面支持三级页面返回二级页面</li>
+          <li><span class="tag tag-optimize">优化</span>不同系统下的权限显示</li>
+          <li><span class="tag tag-fix">修复</span>输入框菜单无法选中</li>
+          <li><span class="tag tag-fix">修复</span>网络中心在深色模式下显示异常</li>
+          <li><span class="tag tag-fix">修复</span>有线网络下无法弹出网络中心弹窗</li>
+        </ul>
+      </div>
+
+      <!-- 1.2.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.2.1</h3>
+          <span class="changelog-date">2024.12.23 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>网页版传输，另一端无需下载 APP 即可开启传输（功能在首页右上角的加号内）</li>
+          <li><span class="tag tag-new">新增</span>全新网络中心卡片（点击首页顶部工具栏的网络图标）</li>
+          <li><span class="tag tag-new">新增</span>mac 版本支持快捷键功能</li>
+          <li><span class="tag tag-new">新增</span>最近文件支持左滑删除记录</li>
+          <li><span class="tag tag-new">新增</span>设置页新增清空全部聊天记录（设置-通用）</li>
+          <li><span class="tag tag-new">新增</span>首页下拉动画</li>
+          <li><span class="tag tag-new">新增</span>手动输入连接设备页的图示引导</li>
+          <li><span class="tag tag-new">新增</span>列表无设备时的引导提示</li>
+          <li><span class="tag tag-new">新增</span>Windows 防火墙检测</li>
+          <li><span class="tag tag-new">新增</span>LSPosed 模块支持，android 端 root 用户可在 LSPosed 管理器中启用 Flix 模块，绕过系统限制，实现后台自动同步剪贴板</li>
+          <li><span class="tag tag-optimize">优化</span>页面切换的过渡动画</li>
+          <li><span class="tag tag-optimize">优化</span>设备离线的列表图标</li>
+          <li><span class="tag tag-optimize">优化</span>设备不活跃的机制和提示</li>
+          <li><span class="tag tag-optimize">优化</span>扩展功能页的列表 UI</li>
+          <li><span class="tag tag-fix">修复</span>部分场景无法发现和传输</li>
+          <li><span class="tag tag-fix">修复</span>字体渲染异常</li>
+          <li><span class="tag tag-fix">修复</span>主页面底栏高斯模糊消失</li>
+          <li><span class="tag tag-fix">修复</span>移动端使用返回按键退出会断开服务</li>
+          <li><span class="tag tag-fix">修复</span>长按输入框会反复弹出键盘</li>
+          <li><span class="tag tag-fix">修复</span>部分场景深色模式显示异常</li>
+        </ul>
+      </div>
+
+      <!-- 1.0.3 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.0.3</h3>
+          <span class="changelog-date">2024.12.05 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>各页面标题栏和触底回弹动效，统一大标题样式</li>
+          <li><span class="tag tag-fix">修复</span>部分场景热点连接失效问题</li>
+          <li><span class="tag tag-fix">修复</span>部分场景崩溃的问题</li>
+          <li><span class="tag tag-fix">修复</span>其他已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 1.0.2 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.0.2</h3>
+          <span class="changelog-date">2024.11.24 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>应用声明页面，包含用户协议、隐私政策等内容</li>
+          <li><span class="tag tag-new">新增</span>引导页隐私协议弹窗</li>
+          <li><span class="tag tag-optimize">优化</span>传输页底部工具栏的样式</li>
+          <li><span class="tag tag-optimize">优化</span>Pad 端竖屏状态下显示样式</li>
+          <li><span class="tag tag-fix">修复</span>返回上级页面，侧栏列表仍为选中状态</li>
+          <li><span class="tag tag-fix">修复</span>部分场景传输进度卡在 0%</li>
+          <li><span class="tag tag-fix">修复</span>部分场景发送大文件闪退</li>
+        </ul>
+      </div>
+
+      <!-- 1.0.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">1.0.1</h3>
+          <span class="changelog-date">2024.11.20 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>区分 mac 免安装版和安装器版</li>
+          <li><span class="tag tag-new">新增</span>电脑端窗口置顶功能</li>
+          <li><span class="tag tag-new">新增</span>快捷键设置</li>
+          <li><span class="tag tag-new">新增</span>关闭窗口可选直接关闭软件</li>
+          <li><span class="tag tag-new">新增</span>可单独关闭二级页面</li>
+          <li><span class="tag tag-new">新增</span>有线网络检测与显示</li>
+          <li><span class="tag tag-new">新增</span>适配 Android 13 主题图标</li>
+          <li><span class="tag tag-new">新增</span>更多文件类型图标</li>
+          <li><span class="tag tag-new">新增</span>语言设置</li>
+          <li><span class="tag tag-optimize">优化</span>文件类型图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>toast 阴影效果</li>
+          <li><span class="tag tag-optimize">优化</span>软件字重显示</li>
+          <li><span class="tag tag-fix">修复</span>部分场景 app 崩溃</li>
+          <li><span class="tag tag-fix">修复</span>部分 WiFi 名称乱码</li>
+          <li><span class="tag tag-fix">修复</span>iOS 通过视频选择器发送视频会被压缩</li>
+          <li><span class="tag tag-fix">修复</span>Windows 标题栏显示异常</li>
+          <li><span class="tag tag-fix">修复</span>一端文件删除后，另一段文件缩略图显示异常</li>
+          <li><span class="tag tag-fix">修复</span>部分网络环境下显示 WiFi 未连接</li>
+        </ul>
+        <p class="changelog-note">*由于原生的图片/视频选择器过于简陋，本版本开始将回退为最初的选择器（视频多选回归），我们也将持续优化选择器的相关体验~</p>
+      </div>
+
+      <!-- 0.10.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.10.0</h3>
+          <span class="changelog-date">2024.11.04 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>全新主页 UI，界面更清爽</li>
+          <li><span class="tag tag-new">新增</span>全新 PC UI 定制，大屏更舒适</li>
+          <li><span class="tag tag-new">新增</span>队列发送机制，大幅优化传输速度和稳定性</li>
+          <li><span class="tag tag-new">新增</span>最近文件页，查找文件更方便</li>
+          <li><span class="tag tag-new">新增</span>全新设置页，合并原设置页和帮助页，分类更明确</li>
+          <li><span class="tag tag-new">新增</span>app 首次使用引导页</li>
+          <li><span class="tag tag-new">新增</span>PC 端截屏/录屏功能，可直接发送</li>
+          <li><span class="tag tag-new">新增</span>PC 端侧边栏宽度调整</li>
+          <li><span class="tag tag-new">新增</span>PC 端新增设备信息状态栏</li>
+          <li><span class="tag tag-new">新增</span>Windows 防火墙检测，快速诊断连接和传输问题</li>
+          <li><span class="tag tag-new">新增</span>Android 选图可直接调用原生系统相册</li>
+          <li><span class="tag tag-new">新增</span>更多场景新增平滑圆角效果</li>
+          <li><span class="tag tag-new">新增</span>发送文件弹窗可通过 Enter 按键确认</li>
+          <li><span class="tag tag-new">新增</span>手动配对的设备下一次可从历史记录一键重新连接</li>
+          <li><span class="tag tag-new">新增</span>大文件传输提示</li>
+          <li><span class="tag tag-new">新增</span>用户协议和隐私政策</li>
+          <li><span class="tag tag-optimize">优化</span>部分页面的图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>设备列表红点显示逻辑，如果已经处在聊天页，则不显示当前设备的红点提示</li>
+          <li><span class="tag tag-optimize">优化</span>页面切换逻辑，右半屏与左半屏页面绑定切换</li>
+          <li><span class="tag tag-optimize">优化</span>二维码添加设备页面 UI</li>
+          <li><span class="tag tag-optimize">优化</span>自由复制页面 UI</li>
+          <li><span class="tag tag-optimize">优化</span>桌面端元素显示大小</li>
+          <li><span class="tag tag-optimize">优化</span>Windows 软件缓存路径</li>
+          <li><span class="tag tag-fix">修复</span>iOS 文件发送崩溃</li>
+          <li><span class="tag tag-fix">修复</span>手动输入添加设备页面按钮显示问题</li>
+          <li><span class="tag tag-fix">修复</span>无法滑动选择文字的问题</li>
+          <li><span class="tag tag-fix">修复</span>缩略图显示异常问题</li>
+          <li><span class="tag tag-fix">修复</span>同名文件冲突相关问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.9.7 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.9.7</h3>
+          <span class="changelog-date">2024.10.16 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>PC 端新增文件另存为功能</li>
+          <li><span class="tag tag-fix">修复</span>一些已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.9.6 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.9.6</h3>
+          <span class="changelog-date">2024.09.22 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-optimize">优化</span>设备发现响应速度</li>
+          <li><span class="tag tag-optimize">优化</span>手动添加的设备刷新后将不再消失</li>
+          <li><span class="tag tag-fix">修复</span>iOS 无法发现设备</li>
+          <li><span class="tag tag-fix">修复</span>iOS 无法选择视频</li>
+          <li><span class="tag tag-fix">修复</span>添加设备页面按钮样式异常</li>
+          <li><span class="tag tag-fix">修复</span>部分场景历史记录不能及时显示</li>
+          <li><span class="tag tag-fix">修复</span>部分场景无法打开 Windows 安装器</li>
+          <li><span class="tag tag-fix">修复</span>跨设备复制粘贴功能失效</li>
+          <li><span class="tag tag-fix">修复</span>断点续传功能失效</li>
+        </ul>
+      </div>
+
+      <!-- 0.9.3 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.9.3</h3>
+          <span class="changelog-date">2024.09.07 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-fix">修复</span>部分场景无法添加设备</li>
+          <li><span class="tag tag-fix">修复</span>Windows 设置页无法滚动到底部</li>
+          <li><span class="tag tag-fix">修复</span>video 组件导致 Windows 应用闪退</li>
+        </ul>
+      </div>
+
+      <!-- 0.9.2 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.9.2</h3>
+          <span class="changelog-date">2024.08.30 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>帮助页新增"推荐给朋友"菜单</li>
+          <li><span class="tag tag-optimize">优化</span>聊天页底部功能区图标样式</li>
+          <li><span class="tag tag-fix">修复</span>部分场景无法发现设备</li>
+          <li><span class="tag tag-fix">修复</span>部分场景无法传输文件</li>
+          <li><span class="tag tag-fix">修复</span>弹窗渐变色消失的问题</li>
+          <li><span class="tag tag-fix">修复</span>深色模式下部分 UI 显示异常</li>
+          <li><span class="tag tag-fix">修复</span>部分情况下无法正常传输</li>
+          <li><span class="tag tag-fix">修复</span>三方应用分享到 Flix 导致图片缩略图异常</li>
+          <li><span class="tag tag-fix">修复</span>安卓端无法获取日志</li>
+          <li><span class="tag tag-fix">修复</span>设置页无法关闭部分开关</li>
+          <li><span class="tag tag-fix">修复</span>点击 apk 文件无法跳转安装</li>
+        </ul>
+      </div>
+
+      <!-- 0.9.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.9.1</h3>
+          <span class="changelog-date">2024.08.14 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>手动连接设备，可扫码配对或手动输入 IP 和端口配对</li>
+          <li><span class="tag tag-new">新增</span>从其他软件分享文件到 Flix 直接发送</li>
+          <li><span class="tag tag-new">新增</span>设置页退出软件按钮</li>
+          <li><span class="tag tag-new">新增</span>通知栏通知退出软件按钮</li>
+          <li><span class="tag tag-optimize">优化</span>Windows 托盘图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>首页右上角加号内菜单图标</li>
+          <li><span class="tag tag-optimize">优化</span>聊天页底部工具栏图标</li>
+          <li><span class="tag tag-optimize">优化</span>点击复制菜单复制成功后，自动收起菜单</li>
+          <li><span class="tag tag-fix">修复</span>部分场景无法发现设备</li>
+          <li><span class="tag tag-fix">修复</span>部分场景图片传输失败</li>
+          <li><span class="tag tag-fix">修复</span>部分场景传多个文件失败</li>
+          <li><span class="tag tag-fix">修复</span>复制粘贴不完整</li>
+          <li><span class="tag tag-fix">修复</span>长按输入框界面跳变</li>
+          <li><span class="tag tag-fix">修复</span>Windows 安装器部分场景报错</li>
+          <li><span class="tag tag-fix">修复</span>文件夹相对路径异常</li>
+          <li><span class="tag tag-fix">修复</span>接收到的视频不显示缩略图</li>
+        </ul>
+      </div>
+
+      <!-- 0.6.5 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.6.5</h3>
+          <span class="changelog-date">2024.07.28 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>发送文件夹功能</li>
+          <li><span class="tag tag-new">新增</span>PC 端刷新按钮</li>
+          <li><span class="tag tag-new">新增</span>将图片/视频保存到相册开关，避免相册内出现重复文件</li>
+          <li><span class="tag tag-new">新增</span>Windows 安装器可用空间显示和进度条显示</li>
+          <li><span class="tag tag-optimize">优化</span>Windows 安装器 UAC 权限申请弹窗</li>
+          <li><span class="tag tag-optimize">优化</span>文件传输会复制一份文件的逻辑</li>
+          <li><span class="tag tag-fix">修复</span>部分文件无法发送</li>
+          <li><span class="tag tag-fix">修复</span>文字消息无法删除</li>
+          <li><span class="tag tag-fix">修复</span>PC 端静默启动失效</li>
+          <li><span class="tag tag-fix">修复</span>跨设备复制粘贴功能失效</li>
+        </ul>
+      </div>
+
+      <!-- 0.6.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.6.0</h3>
+          <span class="changelog-date">2024.07.23 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li>重要提示：① 由于软件发展需要，Flix 安卓端自 0.6.0 版本起更换新包名，请先卸载旧版本再安装新版。② 0.6.0 及之后的版本与旧版本不能互相传输。</li>
+          <li><span class="tag tag-new">新增</span>全局深色模式</li>
+          <li><span class="tag tag-new">新增</span>跨设备复制粘贴功能</li>
+          <li><span class="tag tag-new">新增</span>开机静默启动，不弹出界面</li>
+          <li><span class="tag tag-new">新增</span>自定义安装目录</li>
+          <li><span class="tag tag-new">新增</span>应用发送页搜索支持模糊搜索，使用英文逗号分割可同时搜索多个应用</li>
+          <li><span class="tag tag-optimize">优化</span>图片选择器加载速度</li>
+          <li><span class="tag tag-optimize">优化</span>增加流传输，优化传输容易失败的问题</li>
+          <li><span class="tag tag-optimize">优化</span>应用发送页的搜索流畅度</li>
+          <li><span class="tag tag-fix">修复</span>断点续传相关问题</li>
+          <li><span class="tag tag-fix">修复</span>复制文字链接出现内容缺失</li>
+          <li><span class="tag tag-fix">修复</span>部分情况下发送图片导致闪退</li>
+          <li><span class="tag tag-fix">修复</span>发送文件时，没有显示取消按钮</li>
+          <li><span class="tag tag-fix">修复</span>部分设备不能发现</li>
+          <li><span class="tag tag-fix">修复</span>部分 UI 显示问题</li>
+          <li><span class="tag tag-fix">修复</span>安装完成后 Windows 开始菜单不显示软件</li>
+          <li><span class="tag tag-fix">修复</span>其他已知 bug</li>
+        </ul>
+      </div>
+
+      <!-- 0.5.3 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.5.3</h3>
+          <span class="changelog-date">2024.06.26 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>Windows 免安装绿色版</li>
+          <li><span class="tag tag-new">新增</span>平滑圆角</li>
+          <li><span class="tag tag-new">新增</span>APP 内升级</li>
+          <li><span class="tag tag-new">新增</span>Windows 安装器可自动识别桌面快捷方式、软件自启动选项</li>
+          <li><span class="tag tag-optimize">优化</span>Windows 安装器安装速度</li>
+          <li><span class="tag tag-fix">修复</span>保存图片/视频后相册内/第三方软件内无法找到</li>
+          <li><span class="tag tag-fix">修复</span>权限弹窗反复出现</li>
+        </ul>
+      </div>
+
+      <!-- 0.5.2 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.5.2</h3>
+          <span class="changelog-date">2024.06.17 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>首页顶栏改版，操作更便捷</li>
+          <li><span class="tag tag-new">新增</span>扫一扫和二维码，可快速建立热点连接</li>
+          <li><span class="tag tag-new">新增</span>文件断点续传</li>
+          <li><span class="tag tag-new">新增</span>Linux 版本</li>
+          <li><span class="tag tag-optimize">优化</span>软件功耗</li>
+          <li><span class="tag tag-fix">修复</span>Windows 安装失败</li>
+          <li><span class="tag tag-fix">修复</span>发送多个文件失败</li>
+          <li><span class="tag tag-fix">修复</span>保存媒体文件到 iOS 相册失败</li>
+          <li><span class="tag tag-fix">修复</span>Windows 休眠后文件无法发送/接收</li>
+          <li><span class="tag tag-fix">修复</span>部分图片预览尺寸错误</li>
+        </ul>
+      </div>
+
+      <!-- 0.5.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.5.1</h3>
+          <span class="changelog-date">2024.05.30 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-fix">修复</span>安装失败问题</li>
+          <li><span class="tag tag-fix">修复</span>快捷方式相关问题</li>
+          <li><span class="tag tag-fix">修复</span>返回相关问题</li>
+          <li><span class="tag tag-fix">修复</span>macOS 在某些场景下无法预览文件的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.5.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.5.0</h3>
+          <span class="changelog-date">2024.05.26 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>捐赠入口</li>
+          <li><span class="tag tag-new">新增</span>后台传输</li>
+          <li><span class="tag tag-new">新增</span>传输图片&amp;视频时显示速度</li>
+          <li><span class="tag tag-optimize">优化</span>Android 高刷问题</li>
+          <li><span class="tag tag-optimize">优化</span>复制体验</li>
+          <li><span class="tag tag-optimize">优化</span>收到媒体文件时自动保存到相册</li>
+          <li><span class="tag tag-fix">修复</span>字重显示问题</li>
+          <li><span class="tag tag-fix">修复</span>macOS 无法保存文件到自定义目录</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.9 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.9</h3>
+          <span class="changelog-date">2024.05.09 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>文本自由复制</li>
+          <li><span class="tag tag-optimize">优化</span>文本复制的体验</li>
+          <li><span class="tag tag-optimize">优化</span>聊天页底部图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>气泡菜单弹窗样式</li>
+          <li><span class="tag tag-optimize">优化</span>托盘右键菜单样式</li>
+          <li><span class="tag tag-optimize">优化</span>toast 图标样式</li>
+          <li><span class="tag tag-optimize">优化</span>文件传输的稳定性</li>
+          <li><span class="tag tag-fix">修复</span>Android 接受文件卡顿问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 通知相关显示问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 字体模糊问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 无法打开文件位置的问题</li>
+          <li><span class="tag tag-fix">修复</span>选择本机应用 UI 相关问题</li>
+          <li><span class="tag tag-fix">修复</span>iOS 端无法预览图片/视频的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.8 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.8</h3>
+          <span class="changelog-date">2024.04.27 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>全新气泡样式，更美观，同时支持传输速度显示</li>
+          <li><span class="tag tag-new">新增</span>Windows 端 exe 安装器、卸载器</li>
+          <li><span class="tag tag-new">新增</span>应用发送页面可以快速搜索</li>
+          <li><span class="tag tag-new">新增</span>首页历史记录可以左滑快速删除</li>
+          <li><span class="tag tag-new">新增</span>传递照片/视频包含定位信息</li>
+          <li><span class="tag tag-new">新增</span>文字自由复制</li>
+          <li><span class="tag tag-new">新增</span>Windows 系统通知</li>
+          <li><span class="tag tag-new">新增</span>链接点击直接跳转到浏览器</li>
+          <li><span class="tag tag-optimize">优化</span>如果传输记录为空，首页历史记录不展示</li>
+          <li><span class="tag tag-optimize">优化</span>桌面端图片缩略获取和缓存（减少内存占用，提升加载速度，优化页面流畅度）</li>
+          <li><span class="tag tag-optimize">优化</span>移动端进入消息页的流畅度</li>
+          <li><span class="tag tag-fix">修复</span>macOS 上部分类型文件无法发送的问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 无法打开文件位置的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.7 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.7</h3>
+          <span class="changelog-date">2024.04.16 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>桌面端开机自启动</li>
+          <li><span class="tag tag-new">新增</span>桌面端最小化到托盘</li>
+          <li><span class="tag tag-new">新增</span>桌面端记忆窗口大小</li>
+          <li><span class="tag tag-new">新增</span>移动端发送文件时处理提示</li>
+          <li><span class="tag tag-optimize">优化</span>配置页面列表 UI 显示</li>
+          <li><span class="tag tag-optimize">优化</span>移动端内存占用</li>
+          <li><span class="tag tag-optimize">优化</span>传输速度</li>
+          <li><span class="tag tag-optimize">优化</span>页面流畅度</li>
+          <li><span class="tag tag-fix">修复</span>偶现无法传输文件的问题</li>
+          <li><span class="tag tag-fix">修复</span>和老版本的兼容性问题</li>
+          <li><span class="tag tag-fix">修复</span>其他已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.6 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.6</h3>
+          <span class="changelog-date">2024.04.10 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>消息时间显示</li>
+          <li><span class="tag tag-fix">修复</span>Android 权限的问题</li>
+          <li><span class="tag tag-fix">修复</span>iOS 和 macOS 偶现卡死的问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 无法拖拽文件发送的问题</li>
+          <li><span class="tag tag-fix">修复</span>其他已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.5 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.5</h3>
+          <span class="changelog-date">2024.04.08 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>新的设备发现方式，开启后可解决：开热点无法发现设备的问题。遇到兼容问题可在设置页面关闭</li>
+          <li><span class="tag tag-new">新增</span>粘贴发送截图</li>
+          <li><span class="tag tag-new">新增</span>手动删除缓存</li>
+          <li><span class="tag tag-optimize">优化</span>气泡大小</li>
+          <li><span class="tag tag-optimize">优化</span>缓存占用</li>
+          <li><span class="tag tag-optimize">优化</span>内存占用</li>
+          <li><span class="tag tag-optimize">优化</span>退出多选逻辑</li>
+          <li><span class="tag tag-fix">修复</span>iOS 视频压缩问题</li>
+          <li><span class="tag tag-fix">修复</span>Android 端无法跳转到下载目录的问题</li>
+          <li><span class="tag tag-fix">修复</span>标题被裁切的问题</li>
+          <li><span class="tag tag-fix">修复</span>其他已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.4 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.4</h3>
+          <span class="changelog-date">2024.04.02 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>自定义接收文件目录（iOS 暂不支持）</li>
+          <li><span class="tag tag-new">新增</span>粘贴到输入框快速发送文件</li>
+          <li><span class="tag tag-optimize">优化</span>macOS 和 Windows 端的图标</li>
+          <li><span class="tag tag-fix">修复</span>同名文件冲突导致无法保存的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.3 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.3</h3>
+          <span class="changelog-date">2024.03.28 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>删除功能</li>
+          <li><span class="tag tag-new">新增</span>多选消息功能</li>
+          <li><span class="tag tag-new">新增</span>文件损坏图标提示</li>
+          <li><span class="tag tag-new">新增</span>apk 文件安装权限</li>
+          <li><span class="tag tag-fix">修复</span>iOS 状态栏反色异常的问题</li>
+          <li><span class="tag tag-fix">修复</span>iOS 长时间挂后台掉线问题</li>
+          <li><span class="tag tag-fix">修复</span>Android 9.0 无法接收文件的问题</li>
+          <li><span class="tag tag-fix">修复</span>删除弹窗字体异常的问题</li>
+          <li><span class="tag tag-fix">修复</span>软件名称显示错误的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.2 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.2</h3>
+          <span class="changelog-date">2024.03.25 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">新增</span>自定义设备名称</li>
+          <li><span class="tag tag-new">新增</span>拖拽发送文件</li>
+          <li><span class="tag tag-new">新增</span>长按/右键菜单查看文件目录</li>
+          <li><span class="tag tag-fix">修复</span>其他已知问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.1 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.1</h3>
+          <span class="changelog-date">2024.03.22 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-optimize">优化</span>文件气泡的大小</li>
+          <li><span class="tag tag-fix">修复</span>热点状态下无法使用的问题</li>
+          <li><span class="tag tag-fix">修复</span>聊天框字号过小的问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 版本无法打开文件所在目录的问题</li>
+          <li><span class="tag tag-fix">修复</span>Windows 版本无法分享日志的问题</li>
+        </ul>
+      </div>
+
+      <!-- 0.1.0 -->
+      <div class="changelog-entry">
+        <div class="changelog-version-col">
+          <h3 class="changelog-version">0.1.0</h3>
+          <span class="changelog-date">2024.03.21 更新</span>
+        </div>
+        <ul class="changelog-items">
+          <li><span class="tag tag-new">首版公测</span></li>
+          <li>Flix，像聊天一样传文件。首版公测，欢迎各位尝鲜体验，并提出你的建议想法～</li>
+          <li>支持传图片、视频、应用等其他任意文件，同一网络下即可免流量极速传输</li>
+          <li>支持设置自动接收，接收文件无需确认，自动保存</li>
+          <li>适配 Pad 大屏，布局更优雅</li>
+          <li>Windows，Android，iOS，MacOS 多端支持</li>
+          <li>自然流畅的交互动画，持续优化中</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-divider"></div>
+      <div class="footer-copyright">
+        <p>© 2026 江河智连（武汉）网络技术有限公司 版权所有</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var menuBtn = document.getElementById('menu-btn');
+      var nav = document.getElementById('main-nav');
+      var header = document.querySelector('.header');
+      menuBtn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('nav-open');
+        header.classList.toggle('menu-active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      nav.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      nav.addEventListener('click', function(e) {
+        if (e.target === nav) {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        }
+      });
+
+      document.addEventListener('click', function(e) {
+        if (nav.classList.contains('nav-open') && !header.contains(e.target) && !nav.contains(e.target)) {
+          menuBtn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('nav-open');
+          header.classList.remove('menu-active');
+          document.body.classList.remove('menu-open');
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      });
+
+      requestAnimationFrame(function() {
+        document.querySelectorAll('.fade-up').forEach(function(el, i) {
+          el.style.transitionDelay = (i * 0.1) + 's';
+          el.classList.add('visible');
+        });
+      });
+
+      // Re-trigger animation when restored from bfcache
+      window.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+          document.querySelectorAll('.fade-up').forEach(function(el) {
+            el.classList.remove('visible');
+          });
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              document.querySelectorAll('.fade-up').forEach(function(el, i) {
+                el.style.transitionDelay = (i * 0.1) + 's';
+                el.classList.add('visible');
+              });
+            });
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

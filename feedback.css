@@ -2,25 +2,12 @@
 .feedback-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 110px 300px 0;
+  padding: 110px 260px 0;
 }
 
 .feedback-header {
   text-align: center;
   margin-bottom: 50px;
-}
-
-.feedback-header h1 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 1.33;
-  margin-bottom: 6px;
-}
-
-.feedback-header p {
-  font-size: 18px;
-  color: var(--on-surface-tertiary);
-  font-weight: 400;
 }
 
 /* Feedback rows */
@@ -122,13 +109,6 @@
     padding: 80px 24px 0;
   }
 
-  .feedback-header h1 {
-    font-size: 26px;
-  }
-
-  .feedback-header p {
-    font-size: 15px;
-  }
 
   .feedback-row {
     flex-direction: column;

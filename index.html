@@ -20,9 +20,9 @@
         <a href="#" class="nav-link active">概览</a>
         <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="nav-link">下载</a>
         <a href="feedback.html" class="nav-link">反馈</a>
-        <a href="#" class="nav-link">日志</a>
-        <a href="#" class="nav-link">帮助</a>
-        <a href="#" class="nav-link">关于</a>
+        <a href="changelog.html" class="nav-link">日志</a>
+        <a href="help.html" class="nav-link">帮助</a>
+        <a href="about.html" class="nav-link">关于</a>
         <a href="#" class="nav-link">个人中心</a>
       </nav>
       <button class="menu-btn" id="menu-btn" aria-label="菜单" aria-expanded="false">
@@ -33,8 +33,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1 class="hero-title fade-up">像聊天一样传文件</h1>
-    <p class="hero-subtitle fade-up">新一代局域网全端传输工具，好设计，处处都好用</p>
+    <h1 class="page-title fade-up">像聊天一样传文件</h1>
+    <p class="page-subtitle fade-up">新一代局域网全端传输工具，好设计，处处都好用</p>
     <div class="hero-buttons fade-up">
       <a href="https://my.feishu.cn/wiki/BnmDwTjemizFbdkgoO9cNWEhnrb?from=from_copylink" target="_blank" rel="noopener noreferrer" class="btn btn-primary">立即下载</a>
       <a href="https://flix.center/web" target="_blank" rel="noopener noreferrer" class="btn btn-outline">网页版</a>
@@ -343,6 +343,22 @@
         var index = siblings.indexOf(el);
         el.style.transitionDelay = (index * 0.1) + 's';
         observer.observe(el);
+      });
+
+      // Re-trigger animation when restored from bfcache
+      window.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+          fadeEls.forEach(function(el) {
+            el.classList.remove('visible');
+          });
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              fadeEls.forEach(function(el) {
+                observer.observe(el);
+              });
+            });
+          });
+        }
       });
 
       // Carousel scroll & arrow state
