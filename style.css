@@ -714,7 +714,7 @@ body {
 /* Tool expand - landscape, overflow right */
 .card-image .card-tool-expand-img {
   position: absolute;
-  left: 5%;
+  left: 10%;
   top: 50%;
   transform: translateY(-50%);
   width: 140%;
