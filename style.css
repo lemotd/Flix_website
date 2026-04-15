@@ -711,6 +711,19 @@ body {
   object-fit: contain;
 }
 
+/* Tool expand - wide card, image fills area */
+.card-image .card-tool-expand-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+}
+
 /* Tool screen - positioned with left offset */
 .card-image .card-tool-screen-img {
   position: absolute;
