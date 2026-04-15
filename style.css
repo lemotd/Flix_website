@@ -711,16 +711,16 @@ body {
   object-fit: contain;
 }
 
-/* Tool expand - landscape, left-aligned, overflow right */
+/* Tool expand - landscape, overflow right */
 .card-image .card-tool-expand-img {
   position: absolute;
-  left: 7%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  height: 82%;
-  width: auto;
+  width: 140%;
   max-width: none;
   max-height: none;
+  height: auto;
   object-fit: contain;
 }
 
