@@ -239,20 +239,35 @@
 
       // Create physics bodies for each card
       var bodies = [];
+      // Shuffle indices so drop order feels random
+      var indices = [];
+      for (var ii = 0; ii < cards.length; ii++) indices.push(ii);
+      for (var ii = indices.length - 1; ii > 0; ii--) {
+        var jj = Math.floor(Math.random() * (ii + 1));
+        var tmp = indices[ii]; indices[ii] = indices[jj]; indices[jj] = tmp;
+      }
       cards.forEach(function(card, i) {
         var cw = card.offsetWidth;
         var ch = card.offsetHeight;
-        // Spread across width in columns, start just above container
-        var col = i % cols;
-        var spacing = W / (cols + 1);
-        var x = spacing * (col + 1) + (Math.random() - 0.5) * 30;
-        var y = -(ch / 2) - (Math.floor(i / cols) * (ch + 15)) - (Math.random() * 20);
+        // Use shuffled order for stagger so cards don't drop in neat rows
+        var dropOrder = indices[i];
+        // Random horizontal position across the full container width (with padding)
+        var pad = cw / 2 + 10;
+        var x = pad + Math.random() * (W - pad * 2);
+        // Stagger vertically with large random gaps so they trickle in
+        var y = -(ch / 2) - (dropOrder * (ch + 40)) - (Math.random() * 80);
         var body = Bodies.rectangle(x, y, cw, ch, {
           chamfer: { radius: 20 },
           friction: 0.3,
           frictionAir: 0.02,
           restitution: 0.3,
-          density: 0.001
+          density: 0.001,
+          angle: (Math.random() - 0.5) * 0.4
+        });
+        // Give each card a slight random horizontal nudge
+        Body.setVelocity(body, {
+          x: (Math.random() - 0.5) * 3,
+          y: 0
         });
         bodies.push(body);
         Composite.add(engine.world, body);
